@@ -12,4 +12,4 @@ A virtual training on web accessibility discussing the importance of an accessib
 - a11y for desktop vs mobile.
 - Exploring inclusive language.
 
-### View the slides online: [thetracyl.github.io/dofl2023/](https://thetracyl.github.io/dofl2023/) 
+### View the slides online: [yikesinc.github.io/learn-a11y/](https://yikesinc.github.io/learn-a11y/) 
