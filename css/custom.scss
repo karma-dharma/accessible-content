@@ -1,0 +1,37 @@
+/**
+ * Custom styles
+ */
+
+/*********************************************
+ * Footer
+ *********************************************/
+
+ .reveal footer {
+		position: fixed;
+		height: 40px;
+		width: 100%;
+		bottom: 0px;
+		left: 0;
+		z-index: 10; 
+		font-size: 35%;
+	padding: .6rem .6rem .4rem .6rem;
+	background: #3B3738;
+	color: #fff;
+
+	a  {
+		color: #fff;
+
+		img.footer-logo {
+			float: left;
+			margin-right: 1rem;
+			margin-top: 0;
+			vertical-align: middle;
+		}
+	}
+
+	.footer-title {
+		margin-bottom: 0.4rem;
+	}
+
+	.footer-credits {}
+}
