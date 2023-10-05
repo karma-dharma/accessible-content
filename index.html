@@ -5,73 +5,87 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>Web Accessibility Lunch and Learn</title>
+
 		<meta name="description" content="The slidedeck for the YIKES Web accessibility lunch and learn.">
+		<meta name="author" content="YIKES, Inc.">
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
-
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans&display=swap" rel="stylesheet">
-
-
+		<link rel="stylesheet" href="dist/theme/yikes.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<!-- FontAwesome -->
+		<script defer src="js/all.min.js"></script> 
+
+
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section class="slide1" data-background="img/slide1.png">
-					<div class="inner-slide-left">
-						<h1 class="large">Lunch & Learn</h1>
+				<section id="intro" class="inner-slide content-left" data-background="img/slide1.png">
+					<div class="half">
+						<h1>Lunch & Learn</h1>
 						<hr>
-						<h2 style="font-size:52px">Web Accessibility</h2>
-						<img style="max-width: 80px; margin-top: 0.5rem;" src="img/icon-a11y.png">
-						<div class="subheading">Making the Web a Welcoming Place for All</div>
-						<p>
-							<big>							
-								<a href="https://yikesinc.github.io/learn-a11y/" target="_blank">yikesinc.github.io/learn-a11y</a>
-							</big>
-						</p>
-						<p>
-							<small>
-								Jaime Medvesky / 
-								<a href="http://twitter.com/yikesinc" target="_blank">@yikesinc</a> / 
-								<a href="http://www.yikesinc.com/" target="_blank">yikesinc.com</a>
-							</small>
+						<h2>Web Accessibility</h2>
+						<img class="icon-lrg" alt="accessibility icon" src="img/icon-a11y.png">
+						<p class="subheading center three-qrt mb4">Making the Web a Welcoming Place for All</p>
+						<p><a href="https://yikesinc.github.io/learn-a11y/" target="_blank">yikesinc.github.io/learn-a11y</a></p>
+						<p class="xsml-text">Jaime Medvesky / 
+							<a href="http://twitter.com/yikesinc" target="_blank">@yikesinc</a> / 
+							<a href="http://www.yikesinc.com/" target="_blank">yikesinc.com</a>
 						</p>
 					</div>
 				</section>
 
-				<section class="blank" data-background="img/slide-blank.png" data-transition="slide" data-background-transition="zoom">
-					<img style="max-width: 100px;" src="img/icon-a11y.png" alt="accessibility icon">
-					<h1 class="fragment fade-right large">"A11Y"</h1>
-					<p class="fragment fade-left">An abbreviation for "accessibility"</p>
-					<div class="fragment">
-						<p class="neg-margin">&nbsp;</p>
-						<p class="neg-margin"><span>A</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Y</span></p>
+				<section id="a11y" class="full" data-background="img/slide-blank1.png" data-transition="slide" data-background-transition="zoom">
+					<img class="icon-xlrg" src="img/icon-a11y.png" alt="accessibility icon">
+					<h1 class="fragment fade-right">"A11Y"</h1>
+					<p><span class="fragment fade-in-then-semi-out">It's a Number!</span><span class="fragment fade-in-then-semi-out"> It's a Word!</span>
+						<br/><span class="fragment fade-in-then-semi-out">...It's Both!</span></p>
+					<p class="fragment fade-left">-An abbreviation for "accessibility"
+						<br><span class="fragment zoom-in white-text">-"Numeronym"</span> <span class="fragment"> - a number-based word</span></p>
+					<div class="fragment fade-down line1 mt1">
+						<p class="xxlrg-text"><span>A</span><span class="sr-text">ccessibilit</span>Y</p>
 					</div>
-					<div class="fragment fade-up same-line">
-						<p style="margin-top:-3rem;margin-bottom:0.25rem;"> c c e s s i b i l i t </p>
+					<div class="fragment fade-up line2">
+						<p class="lrg-text"><span class="sr-text">A</span>ccessibilit<span class="sr-text">Y</span></p>
 					</div>
-					<div class="fragment fade-up">
-						<p class="neg-margin">\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/</p>
-						<p style="margin-top:-0.5rem">(11 letters)</p>
+					<div class="fragment fade-up line3">
+						<p class="xxlrg-text"><span>\</span>/</p>
 					</div>
-					<div class="fragment fade-down">
-						<p class="neg-margin">&nbsp;</p>
-						<p class="neg-margin">&#8595;</p>
-						<p><span>A</span> 11 <span>Y</span></p>
+					<div class="fragment fade-up line4">
+						<p>( 11 letters )</p>
 					</div>
+					<div class="fragment fade-down line5">
+						<p>&#8595;</p>
+						<p class="xlrg-text mt-1"><span>A</span>11<span>Y</span></p>
+					</div>
+
+	<aside class="notes">
+		<a target="_blank" href="https://www.youtube.com/watch?v=78N2SP6JFaI (Superman music)">Superman music</a>
+
+		<p>It seems a bit ironic that such a long and complex-looking word is the term of choice, considering that many of the people who it applies to have difficulties with reading and writing</p>
+
+		</p>so... TO SAVE THE DAY! , we have a shorthand version, or abbreviation,  A 1 1 Y!</p>
+
+		<p>(pronounced) - "A one one Y", or "A eleven Y"</p>
+
+		<p>This is known as "Numeronym" -  (pronounced "New - Ume - Mer -Nym" ) or "Nume -mer- oh -nym" (stress on "nume"; practically skip the "oh" part)</p>
+
+		<p>Type of acronym - word based off of numbers</p>
+
+		<p>-Funny thing about it is that ironically, "A11Y is not accessible" - many screen-readers cannot read it correctly.</p>
+	</aside>
+
 				</section>
 
-				<section class="slide2" data-background="img/slide2.png" data-transition="slide" data-background-transition="zoom">
-					<div class="inner-slide-left">
-						<h1>Today's Topics</h1>
-						<hr>
-						<ul class="fragment fade-left">
+				<section id="topics" class="inner-slide content-left" data-background="img/slide2.png" data-transition="slide" data-background-transition="zoom">
+					<div class="two-third">
+						<h1 class="mt-2 mb1">Today's Topics</h1>
+						<hr class="mb3">
+						<ul class="fragment fade-left col-two">
 							<li>What is A11Y?</li>
 							<li>Types of Disabilities</li>
 							<li>Why Does A11Y Matter?</li>
@@ -86,9 +100,9 @@
 					</div>
 				</section>
 
-				<section class="slide3" data-background="img/slide3.png" data-transition="slide" data-background-transition="zoom">
-					<div class="inner-slide-right">
-						<h1>What is A11y?</h1>
+				<section id="whatis" class="inner-slide content-right" data-background="img/slide3.png" data-transition="slide" data-background-transition="zoom">
+					<div class="sixty">
+						<h1 class="mt-1">What is A11y?</h1>
 						<hr>
 						<div class="fragment fade-in-then-semi-out">
 							<p class="definition">Accessibility (General):</p>
@@ -100,15 +114,19 @@
 						</div>
 						<div class="fragment fade-in">
 							<p class="definition">Web Accessibility:</p>
-							<p class="definition2">The inclusive practice of ensuring there are no barriers that prevent interaction with, or access to, websites on the World Wide Web by people with physical disabilities, situational disabilities, and socio-economic restrictions on bandwidth and speed.</p>
+							<p class="definition2">The practice of designing and developing websites, tools, and technologies in such a way that people with disabilities can use them without any difficulties, ensuring that all users, regardless of their of their abilities can perceive, understand, navigate, interact with the web, as well as contribute to it.<sup>1</sup></p>
 						</div>
 					</div>
+
+	<aside class="notes">
+		<p>Department of Edu: ensuring individuals with disabilities can acquire the same information, engage in the same interactions, and enjoy the same services as individuals without disabilities, with substantially equivalent ease of use.</p>
+	</aside>
 				</section>
 
 				<section>
-					<section class="slide-types" data-background="img/slide-types.png" data-transition="slide" data-background-transition="zoom">
-						<div class="inner-slide-right-full">
-							<h1>Types of Disabilities</h1>
+					<section id="types" class="inner-slide content-right" data-background="img/slide-types.png" data-transition="slide" data-background-transition="zoom">
+						<div class="eighty">
+							<h1 class="mb-1">Types of Disabilities</h1>
 							<ul class="inline">
 								<li class="fragment fade-down">
 									<img class="img-icon" src="img/icon-visual.png">Visual Impairments
@@ -159,7 +177,7 @@
 						</div>
 					</section>
 
-					<section class="slide-persona" data-background="img/slide-blank2.png" data-transition="slide">
+					<section id="persona" class="inner-slide full slide-persona" data-background="img/slide-blank2.png" data-transition="slide">
 						<h1>The Persona Spectrum</h1>
 						<div class="fragment fade-up">
 							<img style="max-height: 470px; margin-top:0px" src="img/persona-spectrum.jpg">
@@ -171,35 +189,35 @@
 
 				<section data-transition="slide" data-background-transition="slide">
 
-					<section class="slide-stats" data-background="img/slide-stats.png">
-						<div class="inner-slide-left2">
-							<h1>Why Does A11Y Matter?</h1>
-							<hr>
+					<section id="stats" class="inner-slide content-left" data-background="img/slide-stats.png">
+						<div class="two-third">
+							<h1 class="mt-2">Why Does A11Y Matter?</h1>
+							<hr class="mb1">
 							<p class="fragment fade-left" style="font-style: italic;">Let's look at some of the latest stats...</p>
-							<ul class="stats-list">
+							<ul class="stats-list mt-1">
 								<li>
 									<p>
 										<span class="fragment fade-up stat">16%</span>
-										<span class="fragment fade-left"> - An estimated <span class="fragment highlight-green large-text">16%</span> of the world’s population has a disability.<sup>1</sup></span>
+										<span class="fragment fade-left"> - An estimated <span class="fragment highlight-green lrg-text">16%</span> of the world’s population has a disability.<sup>1</sup></span>
 									</p>
 									<p class="fragment fade-right tab-right">
-										...that's about <span class="fragment highlight-green large-text">1.3 billion</span> people!
+										...that's about <span class="fragment highlight-green lrg-text">1.3 billion</span> people!
 									</p> 
 								</li>
 
 								<li>
 									<p>
 										<span class="fragment fade-down stat">27%</span>
-										<span class="fragment fade-right"> - 1 in 4 Americans, or <span class="fragment highlight-green large-text">27%</span> live with some type of disability.<sup>2</sup></span>
+										<span class="fragment fade-right"> - 1 in 4 Americans, or <span class="fragment highlight-green lrg-text">27%</span> live with some type of disability.<sup>2</sup></span>
 									</p>
-									<p class="fragment fade-left tab-right">...that's almost <span class="fragment highlight-green large-text">90 million</span> people!
+									<p class="fragment fade-left tab-right">...that's almost <span class="fragment highlight-green lrg-text">90 million</span> people!
 									</p> 
 								</li>
 
 								<li>
 									<p>
 										<span class="fragment fade-up stat">2 Billion</span>
-										<span class="fragment fade-left"> - By 2030, more than <span class="fragment highlight-green large-text">2 billion</span> people will need to use
+										<span class="fragment fade-left"> - By 2030, more than <span class="fragment highlight-green lrg-text">2 billion</span> people will need to use
 											<br/>
 											<span style="margin-left: 11.5rem; margin-top: -5px;"> assistive products, such as screen readers.<sup>1</sup></span>
 										</span>
@@ -209,7 +227,7 @@
 								<li>
 									<p>
 										<span class="fragment fade-down stat">71 Million</span>
-										<span class="fragment fade-right"> - There are <span class="fragment highlight-green large-text">71 Million</span> baby boomers, who carry
+										<span class="fragment fade-right"> - There are <span class="fragment highlight-green lrg-text">71 Million</span> baby boomers, who carry
 										<br/> 
 										<span style="margin-left: 13.5rem; margin-top: -5px;"><span class="fragment highlight-green large-text">$548 Billion</span> in discretionary spending.<sup>3</sup></span>
 									</p>
@@ -218,37 +236,41 @@
 								<li>
 									<p>
 										<span class="fragment fade-up stat">70%</span>
-										<span class="fragment fade-left"> - Over <span class="fragment highlight-green large-text">70%</span> of people with disabilities have a non-visible
+										<span class="fragment fade-left"> - Over <span class="fragment highlight-green lrg-text">70%</span> of people with disabilities have a non-visible
 										<br/>
 										<span style="margin-left: 7rem; margin-top: -5px;">disability, such as cognitive or learning impairments.<sup>4</sup></span>
 									</p>
 								</li>
 							</ul>
 						</div>
+	<aside class="notes">
+		<p> If you are one of the people who like to talk about "group identities", 
+			people with disabilities are the single largest minority group on the planet!</p>
+		</aside>
 					</section>
 
-					<section class="slide-stats" data-background="img/slide-stats.png"  data-transition="slide">
-						<div class="inner-slide-left2 stats-2">
+					<section id="stats2" class="inner-slide content-left" data-background="img/slide-stats.png"  data-transition="slide">
+						<div class="two-third">
 							<span style="color:#b4b4b4 !important;display:block;font-size:32px;font-style:italic;margin-left:3.5rem;margin-top:1rem;text-align:left;">...(continued)...</span>
 							<ul class="stats-list stats-list-2">
 								<li>
 									<p>
 										<span class="fragment fade-up stat">3%</span>
-										<span class="fragment fade-left"> - Only <span class="fragment highlight-green large-text">3%</span> of the internet is accessible to people with disabilities.<sup>5</sup></span>
+										<span class="fragment fade-left"> - Only <span class="fragment highlight-green lrg-text">3%</span> of the internet is accessible to people with disabilities.<sup>5</sup></span>
 									</p>
 								</li>
 
 								<li>
 									<p>
 										<span class="fragment fade-down stat">4,000</span>
-										<span class="fragment fade-right"> - Over <span class="fragment highlight-green large-text">4,000</span> lawsuits were filed in 2022.<sup>6</sup></span>
+										<span class="fragment fade-right"> - Over <span class="fragment highlight-green lrg-text">4,000</span> lawsuits were filed in 2022.<sup>6</sup></span>
 									</p>
 								</li>
 
 								<li>
 									<p>
 										<span class="fragment fade-up stat">400%</span>
-										<span class="fragment fade-left"> - The number of ADA-related lawsuits has increased <span class="fragment highlight-green large-text">400%</span> 
+										<span class="fragment fade-left"> - The number of ADA-related lawsuits has increased <span class="fragment highlight-green lrg-text">400%</span> 
 										<br/>
 										<span style="margin-left: 8.5rem; margin-top: -5px;">within the last 4 years.<sup>6</sup></span>
 									</p>
@@ -257,7 +279,7 @@
 								<li>
 									<p>
 										<span class="fragment fade-down stat">51.4</span>
-										<span class="fragment fade-right"> - On average, there are <span class="fragment highlight-green large-text">51.4</span> accessibility errors per home page 
+										<span class="fragment fade-right"> - On average, there are <span class="fragment highlight-green lrg-text">51.4</span> accessibility errors per home page 
 										<br/>
 										<span style="margin-left: 7rem; margin-top: -5px;">of the top one million websites.<sup>7</sup></span>
 										</span>
@@ -267,7 +289,7 @@
 								<li>
 									<p>
 										<span class="fragment fade-up stat">1.5%</span>
-										<span class="fragment fade-left"> - Only a <span class="fragment highlight-green large-text">1.5%</span> decrease in a11y failures over last 4 years.<sup>6</sup></span>
+										<span class="fragment fade-left"> - Only a <span class="fragment highlight-green lrg-text">1.5%</span> decrease in a11y failures over last 4 years.<sup>6</sup></span>
 									</p>
 								</li>
 							</ul>
@@ -295,52 +317,62 @@
 				</section>
 
 				<section data-transition="slide" data-background-transition="slide">
-					<section class="slide-benefits" data-background="img/slide-blank2.png">
-						<h1>Benefits of A11Y</h1>
+					<section id="benefits" class="inner-slide full slide-benefits" data-background="img/slide-blank2.png">						
+						<h1 class="mt-1">Benefits of A11Y</h1>
 						<hr style="margin-bottom: 2rem;">
 
-						<ul class="dashlist">
+						<ul class="dashlist ml4 mt-2">
 							<li class="fragment fade-left">A11y benefits everyone!</li>
-							<li class="fragment fade-right"><img style="float:right; margin:-4rem 0 20px 5rem; max-width:400px;" src="img/curbcut.png"><span> "Curb-cut Effect"</span><span class="fragment fade-right normal-text"> - the phenomenon of disability-friendly features being used and appreciated by a larger group than the people they were designed for.</span></li>
-							<li class="fragment fade-down">New technology and innovation is mostly driven by people with disabilities:
+							<li class="fragment fade-right"><img style="float:right; margin:-4rem 0 20px 5rem; max-width:400px;" src="img/curbcut.png"><span> "Curb-cut Effect"</span><span class="fragment fade-right" style="font-style: normal; font-weight: 400; color: #e4dfdc;"> - the phenomenon of disability-friendly features being used and appreciated by a larger group than the people they were designed for.</span></li>
+							<li class="fragment fade-down"><span> Did you know?</span><span class="fragment fade-right" style="font-style: normal; font-weight: 400; color: #e4dfdc;"> - New technology and innovation is mostly driven by people with disabilities:</span>
 								<ul class="fragment fade-up square col-two">
-									<li>Typewriter</li>
-									<li>Email</li>
-									<li>The Internet</li>
-									<li>Audiobooks</li>
-									<li>Text-to-Speech</li>
-									<li>Phone Mounts</li>
+									<li class="white-text">Typewriter</li>
+									<li class="white-text">Email</li>
+									<li class="white-text">The Internet</li>
+									<li class="white-text">Audiobooks</li>
+									<li class="white-text">Text-to-Speech</li>
+									<li class="white-text">Phone Mounts</li>
 								</ul>
 							</li>
 						</ul>
+
+	<aside class="notes">
+		<p>FOr me personally, learning about a11y made me a better developer, and designer.</p>
+		<p>I had always wanted to know how a screen reader worked.</p>
+		<p>Accessibility training taught me about new features in Microsoft Word and helped me be more productive at work.</p>
+		<p>I like to read content out loud/use subtitles/enlarge fonts, so I benefit from accessible content, too.</p>
+		<p>Some people also start feeling more productive after receiving accessibility training, and that often makes up for any additional time needed for accessibility. </p>
+		<p>And remember—it’s always easier to make content accessible from the beginning than it is to go back and re-do a project later on.</p>
+	</aside>
 					</section>
 
-					<section class="slide-benefits-company" data-background="img/slide-benefits.png" data-transition="slide" data-background-transition="slide">
-						<div class="inner-slide-right">
-							<h1>Company/Website Benefits</h1>
+					<section id="benefits-co" class="inner-slide content-right slide-benefits-company" data-background="img/slide-benefits.png" data-transition="slide" data-background-transition="slide">
+						<div class="two-third">
+							<h1 class="mt-2" style="font-size: 60px">Company/Website Benefits</h1>
 							<hr>
 							<ul>
-								<li class="fragment fade-right">Improve user experience</li>
-								<li class="fragment fade-left">Improve SEO</li>
-								<li class="fragment fade-right">Increase profitability</li>
-								<li class="fragment fade-left">Increase competitive advantage</li>
-								<li class="fragment fade-right">Reach larger audience</li>
-								<li class="fragment fade-left">Improve reputation</li>
-								<li class="fragment fade-right">Mitigate legal risk</li>
-								<li class="fragment fade-left">Demonstrate ethical responsibility</li>
-								<li class="fragment fade-right">Future-proofing</li>
+								<li class="fragment fade-right">Improve User Experience</li>
+								<li class="fragment fade-left">Enhance Search Engine Optimization (SEO)</li>
+								<li class="fragment fade-right">Increase Profitability</li>
+								<li class="fragment fade-left">Competitive Advantage</li>
+								<li class="fragment fade-right">Reach a Wider Audience</li>
+								<li class="fragment fade-left">Improve Reputation</li>
+								<li class="fragment fade-left">Increase Website Usability</li>
+								<li class="fragment fade-right">Meet Legal Requirements</li>
+								<li class="fragment fade-left">Demonstrate Ethical Responsibility</li>
+								<li class="fragment fade-right">Future-Proof Your Website</li>
 							</ul>
 						</div>
 					</section>
 				</section>	
 
 				<section data-transition="slide" data-background-transition="slide">
-					<section class="slide-factors" data-background="img/slide-factors.png">
-						<div class="inner-slide-left">
+					<section id="factors" class="slide-inner content-left slide-factors" data-background="img/slide-factors.png">
+						<div class="two-third">
 
-							<h1>A11Y Factors to Consider</h1>
+							<h1 class="mt-3" style="font-size: 60px;">A11Y Factors to Consider</h1>
 							<hr/>
-							<ul>
+							<ul class="three-qrt ml4 mt-0">
 								<li class="fragment fade-right">Device - <span>(Mobile, iPad, Desktop, etc. )</span></li>
 								<li class="fragment fade-left">Browser - <span>(Chrome, Firefox, Safari, etc. )</span></li>
 								<li class="fragment fade-up">User Disability - <span>(Visual, Audible, Cognitive, etc. )</span></li>
@@ -351,14 +383,14 @@
 						</div>
 					</section>
 
-					<section class="slide-assistive" data-background="img/slide-assistive.png" data-transition="slide" data-background-transition="slide">
-						<div class="inner-slide-right">
+					<section id="assistive" class="inner-slide content-right slide-assistive" data-background="img/slide-assistive.png" data-transition="slide" data-background-transition="slide">
+						<div class="two-third">
 							<h1>Assistive Technology</h1>
-							<hr/>
+							<hr>
 							<div class="fragment fade-up">
 								<ul>
 									<li class="fragment zoom-in">Any device or software designed to assist people with disabilities in various aspects of their lives, such as accessing web content.</li>
-									<li class="fragment zoom-in">Examples:
+									<li class="fragment zoom-in mt1">Examples:
 										<ul class="fragment fade-down col-two dashlist" style="font-size:24px;">
 											<li>Screen readers - JAWS or NVDA for (Windows), VoiceOver for (Mac and iOS)</li>
 											<li>Magnifiers</li>
@@ -372,70 +404,89 @@
 								</ul>
 							</div>
 						</div>
-					</section>					
+	<aside class="notes">
+		<p>JAWS = Job Access with Speech
+		<p>NVDA = Non-Visual Desktop Access</p>
+		<p>JAWS = Job Access with Speech</p>
+	</aside>
+					</section>
 
-					<section class="slide-device" data-background="img/slide-devices.png" data-transition="slide" data-background-transition="slide">
-						<div class="inner-slide-left" style="width: 80%;">
-							<h1 style="font-size: 50px;width: 70%;">Desktop versus Mobile</h1>
-							<hr style="margin-left: 14rem;">
-							<p class="fragment fade-down" style="width: 70%;">- Even though a11y considerations are different, the core principles are the same.</p>
 
-							<div class="fragment fade-up compare">
-								<h2>Desktop:</h2>
-								<ul>
-									<li>Keyboard Navigation</li>
-									<li>Screen Readers</li>
-									<li>High Contrast and Font Options</li>
-									<li>Captions and Transcripts</li>
-									<li>Focus and Interactive Elements</li>
-								</ul>
-							</div>
+					<section id="sr-video" class="inner-slide full" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
+						<h1>Screen Reader Experience</h1>
+						<hr class="mt0 mb1">
+						<div class="fragment fade-up mt-2">
+							<video width="850" height="500" controls>
+							<source src="video/sr-demo.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+							</video> 
+						</div>
+					</section>			
 
-							<div class="fragment fade-up compare">
-								<h2>Mobile:</h2>
-								<ul>
-									<li>Touch and Gesture A11Y</li>
-									<li>Voice Assistants</li>
-									<li>Screen Readers and Magnifications</li>
-									<li>Responsive Design</li>
-									<li>Mobile Keyboard Accessibility</li>
-									<li>Offline Accessibility</li>
-								</ul>
+					<section id="devices" class="inner-slide content-left slide-device" data-background="img/slide-devices.png" data-transition="slide" data-background-transition="slide">
+						<div class="two-third">
+							<h1 class="mt-1">Desktop versus Mobile</h1>
+							<hr>
+							<div class="compare-lists">
+								<div class="fragment fade-up compare">
+									<h2 class="mt1 mb0">Desktop:</h2>
+									<ul>
+										<li>Keyboard Navigation</li>
+										<li>Screen Readers</li>
+										<li>High Contrast and Font Options</li>
+										<li>Captions and Transcripts</li>
+										<li>Focus and Interactive Elements</li>
+									</ul>
+								</div>
+
+								<div class="fragment fade-up compare">
+									<h2 class="mt1 mb0">Mobile:</h2>
+									<ul>
+										<li>Touch and Gesture A11Y</li>
+										<li>Voice Assistants</li>
+										<li>Screen Readers and Magnifications</li>
+										<li>Responsive Design</li>
+										<li>Mobile Keyboard Accessibility</li>
+										<li>Offline Accessibility</li>
+									</ul>
+								</div>
 							</div>
 						</div>
+	<aside class="notes">
+		<p>- Even though a11y considerations are different, the core principles are the same.</p>
+	</aside>
 					</section>
 
 				</section>
 
 				<section data-transition="slide" data-background-transition="slide">
 
-					<section class="slide-wcag" data-background="img/slides-justice.png" data-transition="slide" data-background-transition="slide">
-						<div class="inner-slide-right" style="width: 80%; margin-left: 18rem">
-							<h1 style="margin-top: -2rem;">A11Y Guidelines & Standards</h1>
-							<hr/>
-
-							<h2 class="fragment fade-up">WCAG 2.0</h2>
-							<p style="font-size:26px; font-weight: 700; margin-top:0.5rem;" class="fragment fade-down">Web Content Accessibility Guidelines</p>
-							<ul class="dashlist" style="font-size: 26px;">
+					<section id="wcag" class="inner-slide content-right slide-wcag" data-background="img/slides-justice.png" data-transition="slide" data-background-transition="slide">
+						<div class="three-qrtr">
+							<h1 class="mt-2">A11Y Guidelines & Standards</h1>
+							<hr>
+							<h2 class="fragment fade-up mb1">WCAG 2.0</h2>
+							<p style="font-size:32px; font-weight: 700;" class="fragment fade-down mt0">Web Content Accessibility Guidelines</p>
+							<ul class="dashlist mt-1" style="font-size: 26px;">
 								<li class="fragment fade-left">The set of web accessibility guidelines which are the main standards</li>
 								<li class="fragment fade-right">The most-referenced set of standards in lawsuits</li>
 								<li class="fragment fade-left">Standards are organized by four (4) main principles, with three (3) levels of compliance:</li>
 							</ul>
 
-							<h2 class="fragment fade-down">"P O U R"</h2>
-							<ul class="inline">
-								<li class="fragment zoom-in"><span style="color:#faf8bf;font-size:34px;font-weight:700;">P</span><br/>
+							<h3 class="fragment fade-down mb0" style="letter-spacing: 20px;">"POUR"</h3>
+							<ul class="ml-1 mt-3 inline">
+								<li class="fragment zoom-in"><span style="color:#faf8bf;font-size:30px;font-weight:700;">P</span><br/>
 									Perceivable
 								</li>
-								<li class="fragment zoom-in"><span style="color:#faf8bf;font-size:34px;font-weight:700;">O</span><br/>
+								<li class="fragment zoom-in"><span style="color:#faf8bf;font-size:30px;font-weight:700;">O</span><br/>
 									Operable</li>
-								<li class="fragment zoom-in"><span style="color:#faf8bf;font-size:34px;font-weight:700;">U</span><br/>
+								<li class="fragment zoom-in"><span style="color:#faf8bf;font-size:30px;font-weight:700;">U</span><br/>
 									Understandable</li>
-								<li class="fragment zoom-in"><span style="color:#faf8bf;font-size:34px;font-weight:700;">R</span><br/>
+								<li class="fragment zoom-in"><span style="color:#faf8bf;font-size:30px;font-weight:700;">R</span><br/>
 									Robust</li>
 							</ul>
-
-							<ul class="inline">
+							<hr style="border: 1px solid #888e99 !important; width: 54%; margin-bottom: 0;">
+							<ul class="ml-1 inline" style="margin-top: 0.5rem !important;">
 								<li class="fragment zoom-in"><span style="color:#faf8bf;font-size:30px;font-weight:700;">Level 1</span><br style="margin-bottom: 0.75rem;">
 									AAA
 								</li>
@@ -447,62 +498,64 @@
 						</div>
 					</section>
 
-					<section class="slide-content" data-background="img/slides-justice.png" data-transition="slide" data-background-transition="slide">
-						<div class="inner-slide-right" style="width: 94%; margin-left: 18rem;">
-							<h1 style="margin-top: -2rem;">WCAG Standards</h1>
+					<section id="standards" class="inner-slide slide-content" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
+						<div>
+							<h1 class="mt-2">WCAG Standards</h1>
 							<hr/>
 							<div style="margin-left:-2rem;">
-								<div class="fragment zoom-in compare">
-									<h3 style="text-align: left; color:#faf8bf;text-transform: none;">Perceivable:</h3>
-									<p style="font-size: 22px; text-align: left;">-Content must be presentable to users in ways they can perceive.</p>
-									<ul class="fragment zoom-in" style="font-size: 24px;">
-										<li>Images, navigation menu, links, headers</li>
-										<li>Color contrast ratios</li>
-										<li>Audio/video - captions, subtitles</li>
-										<li>Proper grammer, no abbreviations</li>
-									</ul>
-								</div>
-
-								<div class="fragment zoom-in compare">
-									<h3 style="text-align: left; color:#faf8bf;text-transform: none;">Operable:</h3>
-									<p style="font-size: 22px; text-align: left;">-User interface components and navigation must be operable.</p>
-									<ul class="fragment zoom-in" style="font-size: 24px;">
-										<li>Skip link, ARIA roles</li>
-										<li>Keyboard accessible, focus tab order</li>
-										<li>Flow of information (headings tags, titles)</li>
-										<li>Audio/video controls</li>
-									</ul>
-								</div>
-
-								<div class="fragment zoom-in compare">
-
-									<h3 style="text-align: left; color:#faf8bf;text-transform: none;">Understandable:</h3>
-									<p style="font-size: 22px; text-align: left;">-Information and the operation of UI must be understandable.</p>
-									<ul class="fragment zoom-in" style="font-size: 24px;">
-										<li>Keyboard accessible, focus tab order</li>
-										<li>Flow of information (headings tags, titles)</li>
-										<li>Pause/controls on moving objects</li>
-									</ul>
-								</div>
+								<div class="all-lists">
+									<div class="fragment zoom-in compare">
+										<h2 style="text-align: left; color:#faf8bf;text-transform: none;">Perceivable:</h2>
+										<p style="font-size: 22px; text-align: left;">-Content is presented so it can be  to users in ways they can perceive.</p>
+										<ul class="fragment zoom-in" style="font-size: 24px;">
+											<li>Images, navigation menu, links, headers</li>
+											<li>Color contrast ratios</li>
+											<li>Audio/video - captions, subtitles</li>
+											<li>Proper grammar, no abbreviations</li>
+										</ul>
+									</div>
 
 									<div class="fragment zoom-in compare">
-									<h3 style="text-align: left; color:#faf8bf;text-transform: none;">Robust:</h3>
-									<p style="font-size: 22px; text-align: left;">-Content must be understandable for assistive technologies.</p>
-									<ul class="fragment zoom-in" style="font-size: 24px;">
-										<li>Proper nesting for headings</li>
-										<li>Function/state of components</li>
-										<li>Semantic HTML/landmarks (header, nav, main, etc.)</li>
-										<li>Screen change announcements</li>
-									</ul>
+										<h2 style="text-align: left; color:#faf8bf;text-transform: none;">Operable:</h2>
+										<p style="font-size: 22px; text-align: left;">-User interface components and navigation is operable.</p>
+										<ul class="fragment zoom-in" style="font-size: 24px;">
+											<li>Skip link, ARIA roles</li>
+											<li>Keyboard accessible, focus tab order</li>
+											<li>Flow of information (headings tags, titles)</li>
+											<li>Audio/video controls</li>
+										</ul>
+									</div>
+
+									<div class="fragment zoom-in compare">
+
+										<h2 style="text-align: left; color:#faf8bf;text-transform: none;">Understandable:</h2>
+										<p style="font-size: 22px; text-align: left;">-Information and the operation of UI is understandable.</p>
+										<ul class="fragment zoom-in" style="font-size: 24px;">
+											<li>Keyboard accessible, focus tab order</li>
+											<li>Flow of information (headings tags, titles)</li>
+											<li>Pause/controls on moving objects</li>
+										</ul>
+									</div>
+
+									<div class="fragment zoom-in compare">
+										<h2 style="text-align: left; color:#faf8bf;text-transform: none;">Robust:</h2>
+										<p style="font-size: 22px; text-align: left;">-Content is understandable for assistive technologies.</p>
+										<ul class="fragment zoom-in" style="font-size: 24px;">
+											<li>Proper nesting for headings</li>
+											<li>Function/state of components</li>
+											<li>Semantic HTML/landmarks (header, nav, main, etc.)</li>
+											<li>Screen change announcements</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
 					</section>
 
-					<section class="slide-terms" data-background="img/slide-standards.png" data-transition="slide" data-background-transition="slide">
-						<div class="inner-slide-left">
-						<h1 style="margin-top: -2rem;">Other A11Y Terms</h1>
-						<hr/>
+					<section id="terms" class="slide-inner content-left slide-terms" data-background="img/slide-standards.png" data-transition="slide" data-background-transition="slide">
+						<div class="half" style="margin-left: 8rem;">
+						<h1 style="margin-top: -2rem;">A11Y Legal Terms</h1>
+						<hr class="mb0">
 							<ul class="fragment fade-left" style="text-align: left; font-size: 25px;">
 								<li><span style="color:#faf8bf;">ADA</span> - The Americans with Disabilities Act (ADA) is a U.S. federal law that “prohibits discrimination against people with disabilities in several areas.</li>
 								<li><span style="color:#faf8bf;">WAI/W3C</span> - Web Accessibility Initiative / World Wide Web Consortium - the main international standards organization for the Internet.</li>
@@ -515,15 +568,21 @@
 
 				<section data-transition="slide" data-background-transition="slide">
 
-					<section class="slide-content" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
+					<section id="make" class="slide-inner full slide-make" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
 						<h1>How to Make your Site Accessible</h1>
 						<hr/>
 						<ul style="font-size:28px; width: 70%;" class="dashlist">
-							<li class="fragment fade-left">Understand that it is an ongoing process</li>
-							<li class="fragment fade-left">Start with automated testing tools and make the easy changes that are within budget</li>
-							<li class="fragment fade-left">Graduate to human and keyboard testing and taking on the larger tasks</li>
-							<li class="fragment fade-left">Avoid Plugins and Overlay Widgets that use AI and claim to short-cut providers</li>
+							<li class="fragment fade-left">Understand that it is an ongoing process.</li>
+							<li class="fragment fade-left">Start with automated testing tools and make the easy changes that are within budget.</li>
+							<li class="fragment fade-left">Graduate to human and keyboard testing and taking on the larger tasks.</li>
+							<li class="fragment fade-left">Avoid Plugins and Overlay Widgets that use AI and claim to short-cut providers.</li>
 						</ul>
+
+	<aside class="notes">
+		<p>Overlay widgets only solve about 30-40% of issues that are easily solved by automated tools</p>
+		<p>People with disabilities already have all the tools they need in place.</p>
+		<p>If have time show the video of user trying to get around on car site with overlay widget in place.</p>
+	</aside>
 					</section>
 
 
@@ -531,118 +590,215 @@
 						<h1>A11Y for Content</h1>
 						<hr/>
 						<ul class="dashlist col-two" style="font-size: 24px;">
-							<li>Headings - even if not visible; apply correct hierarchy/nesting of subtitles (H1, H2, H3)</li>
-							<li>Use lists whenever possible</li>
-							<li>Alt text for images - describe image as it relates to the content</li>
-							<li>Avoid abbreviations (U.S. states, months, days, )</li>
-							<li>Spell things out - "-", number order ("first"), "ie", "for ex", "etc" </li>
-							<li>Spell out acronyms twice, then use only acronym; Use abbr tag</li>
-							<li>No empty links - "Click here", "Read more"</li>
-							<li>Keep language simple - "Submission received" versus "We Got Your Feedback"</li>
-							<li>Make sure tables have proper accessible roles/scopes (table, rowgroup, row, columnheader/col ) </li>
-							<li>Identify language</li>
+							<li>Ensure all page sections have a descriptive heading.
+								<div class="tip">
+									<span>Tip:</span> Assign the class < screen-reader-text > if you do not want the heading to be visible for sighted users.
+								</div>
+							</li>
+							<li>Use correct hierarchy/nesting for heading tags:
+								<code>
+									<h1> Heading 1 </h1>
+
+										< h2 > Heading 2 < /h2 >
+											..content..
+
+											< h3 > Heading 3 < /h3 >
+												..content..
+
+											< h3 > Heading 3 < /h3 >
+												..content..
+
+										< h2 > Heading 2 < /h2 >
+											..content..
+								</code>
+
+								<div class="tip">
+									<span>Tip:</span> To apply a style associated with a specific heading tag, assign a CSS style named as the tag, then add this class to the heading.
+									<code>
+										CSS: h2, .h2 {font-size:40px;}
+										HTML: <h3 class="h2"> Heading 3 Styled as Heading 2</h3> 
+									</code>
+
+								</div>
+							</li> 
+							<li>Use lists instead of paragraphs whenever possible.</li>
+							<li>Provide a Table of Contents in a fixed sidebar for quick access to specific sections of content.</li>
+							<li>Avoid abbreviations, such as U.S. states ("NJ", "PA"), months ("Jan"), days ("Fri").</li>
+							<li>Spell characters out, such as "-" ("1 to 3"), "1st" ("first"), "ie" ("for example"), "etc" ("and so on" ).</li>
+							<li>Write out full name for acronyms at least two (2) times, then use just the acronym along with [<abbr>] tag after that</li>
+							<li>Avoid writing content in ALL CAPS.
+								<div class="tip">
+									<span>Tip:</span>To write normal text but display as uppercase, apply style < text-transform: uppercase >.
+								</div>
+							</li>
+							<li>Use descriptive and meaningful text for links, such as "<span class="italic">Read more about web accessibility</span>" instead of "<span class="italic">Click here</span>".</li>
+							<li>Keep language simple and avoid jargon or complex words - "<span class="italic">Submission received</span>" versus "<span class="italic">We Got Your Feedback</span>"</li>
 						</ul>
 					</section>
 
-
-					<section class="slide-media slide-content" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
-						<h1>A11Y for Media</h1>
+					<section class="slide-images slide-content" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
+						<h1>A11Y for Images</h1>
 						<hr/>
 						<ul style="vertical-align:top;" class="dashlist">
-							<li>Avoid auto-playing audio</li>
-							<li>Provide captions, subtitles, transcriptions</li>
-							<li>Make sure video controls are always available</li>
-							<li>Services available for transcriptions
+							<li>All images should include an image alt tag.
+								<ul>
+									<li>Use an empty alt tag for decorative images - < alt = "" >.</li>
+									<li>Provide an alt description as it relates to the content for all non-decorative images.
+										<br/>
+										For example: (show image of King Henry to the right of this)
+										<br/>
+										Article on King Henry III
+										<br>
+										-History article - <span style="font-style: italic;">"King Henry VIII of England looking stern and wearing lavish royal clothing."</span>
+										<br/>
+										-Fashion article - <span style="font-style: italic;">"King Henry VIII of England wearing a fur-trimmed hat and cape, and bedazzled silver and gold jewelry."</span>
+									</li>
+								</ul>
+							</li>
 
+							<li>For icons, use inline < SVG >s or inline images, instead of icons that use font-family or css "content" style to display.
+								<ul>
+									<li>Decorative - apply  < aria-hidden="true" ></li>
+									<li>Non-decorative - assign < title > and SVG attributes.
+									<br/>
+									For example:
+									<br/>
+									< put example SVG code here > </li>
+
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<section class="slide-images slide-content" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
+						<h1>A11Y for Audio/Video</h1>
+						<hr/>
+
+						<ul>
+							<li>Avoid auto-playing audio/video</li>
+							<li>Provide controls to turn on video captions and subtitles (non-auditory), or transcriptions (non-visual)</li>
+							<li>Make sure video controls are always available</li>
+							<li>Transcriptions services available - but always double-check it, especially if done by AI</li>
+							<li>Include Pause/Play controls on Carousels that slide automatically (Fade doesn't need since it's subtle)</li>
 						</ul>
 
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/O7j4_aP8dWA?cc_load_policy=1&cc_lang_pref=en" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 					</section>
-
 
 					<section class="slide-development slide-content" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
 						<h1>A11Y for Design and Development</h1>
 						<hr/>
-						<ul style="font-size:26px;" class="dashlist col-two">
-							<li>"Skip to main" link before navigation</li>
-							<li>Use semantic HTML by using landmark roles (main, header, footer)</li>
-							<li>Icons - refrain from using icons that rely on font-family</li>
-							<li>Avoid using css style "content"</li>
-							<li>Use ARIA attributes only when necessary</li>
-							<li>For lists, use heading ID with ARIA labelledby</li>
-							<li>Check all color contrast ratios</li>
-							<li>Consistent and typical styling throughout site</li>
-							<li>Largest font-size, line-height and padding that design allows</li>
-							<li>Pseudo-elements (hover, focus, active) should be unique and obvious as possible</li>
-							<li>Focus should be very obvious to show where you are on the page</li>
-						</ul>
+
+						<div class="compare" style="width:46%;">
+							<h2 style="text-align: left;">Design:</h2>
+							<ul style="font-size:26px;" class="dashlist">
+								<li>Check all color contrast ratios</li>
+								<li>Use consistent and typical styling throughout site, such as underline links and color blue / purple</li>
+								<li>Largest font-size, line-height and padding that design allows</li>
+								<li>Specific states of select elements (:hover, :focus, :active) should be styled to be unique and as obvious as possible</li>
+								<li>Focus should be very obvious to show "at a glance" where you are on the page</li>
+							</ul>
+						</div>
+
+						<div class="compare" style="width:46%;">
+							<h2 style="text-align: left;">Development:</h2>
+							<ul style="font-size:26px;" class="dashlist">
+								<li>Include "Skip to main" link before navigation that is visible when it receives focus, and that matches theme style.</li>
+								<li>Use semantic HTML (landmark roles) whenever possible - (< main >, < header >, < footer >).</li>
+								<li>Avoid using the "content" css style to display characters.</li>
+								<li>Ensure proper use of ARIA attributes and only use when necessary.</li>
+								<li>For lists, include a heading with a unique ID, then add < aria-labelledby > to the < ul > that has a value matching the heading ID.</li>
+								<li>Apply semantic role/scope attributes to < table ></li>
+								<li>Identify language << SHOW EXAMPLE >></li>
+							</ul>
+						</div>
 
 					</section>
 				</section>
 
-
-				<section class="slide-testing" data-background="img/slide-testing.png" data-transition="slide" data-background-transition="slide">
-					<div class="inner-slide-right">
+				<section id="testing" class="inner-slide content-right slide-testing" data-background="img/slide-testing.png" data-transition="slide" data-background-transition="slide">
+					<div class="sixty">
 						<h1>How to Test A11Y</h1>
 						<hr/>
+						<div class="compare">
+							<h2 style="color:#faf8bf;font-size:30px;margin-bottom: 0; margin-left:3rem; text-align: left;">Automated:</h2>
+							<ul style="font-size: 26px; margin-left: 4rem;" class="dashlist">
+								<li style="line-height: 1.1;"><a target="_blank" href="https://accessibilityinsights.io/docs/web/overview/">Accessibility Insights for Web</a> - (Chrome) - The best, most thorough test</li> 
+								<li><a target="_blank" href="https://wave.webaim.org/">WAVE Testing Tool</a> - (Add-on or extension)</li>
+								<li><a target="_blank" href="https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US&branded&utm_term=axe%20download&utm_campaign=Search%20-%20axe%20DevTools%20-%20Checker&utm_source=adwords&utm_medium=ppc&hsa_src=g&hsa_ad=626089536234&hsa_tgt=kwd-738367405671&hsa_mt=p&hsa_ver=3&hsa_acc=7854167720&hsa_kw=axe%20download&hsa_grp=142979637091&hsa_cam=17378411167&hsa_net=adwords&gclid=CjwKCAjwyNSoBhA9EiwA5aYlb-jPNQUJGfiqX_SoQGDRrJqUwh2RDbEBHYCvEPU7VPvKB01Yh8DlzhoClQ4QAvD_BwE">AXE></a> - Firefox extension</li>
+								<li><a href="https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk">Lighthouse</a> - (Chrome)</li>
+								<li>Use <a target="_blank" href="https://validator.w3.org/">HTML5 validator</a> to run site through and fix/verify the code.</li>
+							</ul>
+						</div>
 
-						<ul style="font-size: 26px; margin-left: 4rem;" class="dashlist">
-							<li style="line-height: 1.1;">Accessibility Insights - Chrome extension - The best, most thorough test</li> 
-							<li>WAVE - <a target="_blank" href="https://wave.webaim.org/">https://wave.webaim.org/</a></li>
-							<li>AXE - Firefox</li>
-							<li>Lighthouse - Chrome extension</li>
-							<li>Run site through HTML5 validator - <a target="_blank" href="https://validator.w3.org/">https://validator.w3.org/</a></li>
-						</ul>
-
-						<ul style="font-size: 26px; margin-top: 2rem; margin-left: 4rem;" class="dashlist">
-							<li style="line-height: 1.1;">Manual Testing - turn on screen reader and use keyboard commands (Tab) - listen for yourself!</li>
-							<li>Text-only Zoom in browser setting - zoom-in 200% to ensure nothing is cut off or falls off screen</li>
-							<li>View site with Spectrum - (Chrome extension) - allows you to view website with various types of color-blindness</li>
-							<li>Turn off CSS and JS</li>
-						</ul>
+						<div class="compare">
+							<h2 style="color:#faf8bf; font-size: 30px; margin-bottom: 0; margin-left:3rem;text-align: left;">Manually:</h2>
+							<ul style="font-size: 26px; margin-top: 2rem; margin-left: 4rem;" class="dashlist">
+								<li style="line-height: 1.1;">Listen for yourself - Turn on screen-reader, use keyboard commands (Tab/Enter/Spacebar)</li>
+								<li>Text-only Zoom in - (browser setting) - (Ctrl + UpArrow) to zoom-in at 200% - ensure nothing is cut off or falls off</li>
+								<li>Spectrum - (Chrome extension) - test various types of color-blindness</li>
+								<li>Turn off CSS and JS - ensure content is still accessible</li>
+							</ul>
+						</div>
+					</div>
 				</section>
-
 
 				<section class="slide-resources" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
 					<h1>Resources</h1>
 					<hr/>
 					<p style="text-align: left;">Testing Tools:</p>
-						<ul style="font-size: 26px; margin-top: -1rem;" class="dashlist">
-							<li><a target="_blank" href="https://wave.webaim.org/">https://wave.webaim.org/</a> - WAVE testing tool</li>
-							<li><a target="_blank" href="https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF">https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF</a></li>
-							<li><a target="_blank" href="http://colorsafe.co/">http://colorsafe.co/</a></li>
-							<li><a target="_blank" href="https://www.htmlcsscolor.com/web-safe-colors">https://www.htmlcsscolor.com/web-safe-colors</a> - websafe background & foreground color combinations displayed in a grid</li>
-							<li><a target="_blank" href="https://wave.webaim.org">https://wave.webaim.org/</a></li>
-							<li><a target="_blank" href="https://validator.w3.org/">https://validator.w3.org/</a></li>
-						</ul>
+					<ul style="font-size: 26px; margin-top: -1rem;" class="dashlist">
+						<li><a target="_blank" href="https://wave.webaim.org/">https://wave.webaim.org/</a> - WAVE testing tool</li>
+						<li><a target="_blank" href="https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF">https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF</a></li>
+						<li><a target="_blank" href="http://colorsafe.co/">http://colorsafe.co/</a></li>
+						<li><a target="_blank" href="https://www.htmlcsscolor.com/web-safe-colors">https://www.htmlcsscolor.com/web-safe-colors</a> - websafe background & foreground color combinations displayed in a grid</li>
+						<li><a target="_blank" href="https://wave.webaim.org">https://wave.webaim.org/</a></li>
+						<li><a target="_blank" href="https://validator.w3.org/">https://validator.w3.org/</a></li>
+					</ul>
 
-						<p style="text-align: left;">Other Resources:</p>
-						<ul style="font-size: 26px; margin-top: -1rem;" class="dashlist">
-							<li><a target="_blank" href="https://www.youtube.com/watch?v=ITUDiTgAZY0">https://www.youtube.com/watch?v=ITUDiTgAZY0</a> - 11 minute video that shows how to use WAVE testing</li>
+					<p style="text-align: left;">Other Resources:</p>
+					<ul style="font-size: 26px; margin-top: -1rem;" class="dashlist">
+						<li><a target="_blank" href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Introduction to Web Accessibility (W3C/WAI)</a>
+						<li><a target="_blank" href="https://www.youtube.com/watch?v=ITUDiTgAZY0">How to Test Accessibility with WAVE Video</a> - 11 minute video that shows how to use WAVE testing</li>
 					</ul>
 				</section>
 
 				<section class="credits" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
 					<h1>Footnotes</h1>
+
+
 						<ul class="footnotes" style="list-style: none;">
+
+							<li><sup>1</sup><a target="_blank" href="https://www.spaceotechnologies.com/glossary/tech-terms/what-is-web-accessibility/">Space Technologies, article, <span>"What is Web Accessibility?"</span>, June 23, 2023</a></li>
+
 							<li><sup>1</sup> <a id="stat1"  target="_blank" href="https://www.who.int/en/news-room/fact-sheets/detail/disability-and-health">The World Health Organization (WHO)</a></li>
+
 							<li><sup>2</sup> <a id="stat2"  target="_blank" href="https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html"> Centers for Disease Control and Prevention (CDC)</a></li>
+
 							<li><sup>3</sup> <a id="stat3" target="_blank" href="https://www.accessibility.works/blog/benefits-ada-compliance-to-management/?utm_campaign=&utm_content=Budget%20Season%3A%20Why%20web%20accessibility%20%26%20ADA%20compliance%20is%20a%20good%20investment.&utm_medium=email&utm_source=getresponse">Accessibility Works, article, "Benefits of Web Accessibility & ADA Compliance"</a></li>
 
 							<li><sup>4</sup> <a id="stat3" target="_blank" href="https://www.rod-group.com/sites/default/files/Summary%20Report%20-%20The%20Global%20Economics%20of%20Disability%202020.pdf">Global Economics of Disability 2020 report</a></li>
+
 							<li><sup>5</sup> <a id="stat4" target="_blank" href="https://webaim.org/projects/million/">WebAim’s 2022 report</a></li>
+
 							<li><sup>6</sup> <a id="stat5" target="_blank" href="https://blog.usablenet.com/2021-lawsuit-report-trends-and-findings">UsableNet’s 2021 ADA Digital Accessibility Lawsuits report</a></li>
+
 							<li><sup>7</sup> Webaim, 2021</li>
 
 						</ul>
 
 				</section>
 
-				<section class="the-end" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
+				<section id="conclusion" class="the-end" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
 					<h1>Thank You!</h1>
 				</section>
 
+
+				<section id="glossary" class="slide-glossary" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
+					<h1>A11Y Glossary</h1>
+					<p>Coming Soon</p>
+
+				</section>
 
 			</div>
 			
@@ -651,11 +807,11 @@
 					<img src="img/logo-white.png" class="footer-logo" />
 				</a> 
 				
-				<div class="footer-title">
+				<div class="footer-title" style="font-size: 16px;">
 					Web Accessibility Lunch and Learn
 				</div>
 
-				<div class="footer-credits">
+				<div class="footer-credits" style="font-size: 14px;">
 					Jaime Medvesky &nbsp; &#8226; &nbsp; 
 					<a href="http://yikesinc.com" target="_blank">yikesinc.com</a>
 				</div>
@@ -672,9 +828,9 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,				
-				width: 1200,
-				controls: false,
-				progress: false,
+				width: 1400,
+				controls: true,
+				progress: true,
 				history: true,
 				center: true,
 

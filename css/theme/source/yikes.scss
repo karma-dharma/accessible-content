@@ -1,0 +1,1072 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(./fonts/source-sans-pro/source-sans-pro.css);
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif+NP+Hmong:wght@500);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+$white: #fff;
+$black: #000;
+$offwhite: #e4dfdc;
+$dkblue: #484c68;
+$green: #8ee87f;
+$ltyellow: #faf8bf;
+$yellow: #f1fa8c;
+$purple: #d7bdff;
+$pink: #ffc0cb;
+$blue: #71b2da;
+$grey: #888E99;
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #282938;
+$mainColor: $offwhite;
+$headingColor: $white;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: rgba( $linkColor, 0.75 );
+
+
+$mainFontSize: 34px;
+$mainFont: 'PT Sans', sans-serif;
+$headingFont: 'Noto Serif NP Hmong', serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 400;
+$headingLineHeight: 1.1;
+
+$heading1Size: 68px;
+$heading2Size: 48px;
+$heading3Size: 38px;
+$heading4Size: 30px;
+
+
+// Vertical spacing between blocks of text
+$blockMargin: 1rem;
+$blockMargin2: 2rem;
+
+$negMargin: -1rem;
+$negMargin2: -2rem;
+
+$centerMargin: 0 auto;
+$centerBlockMargin: 0 auto 3rem;
+
+
+// Headings
+$headingMargin: 0 0 $blockMargin2 0;
+
+
+@mixin topgap() {
+	margin-top: 3rem;
+}
+
+@mixin center {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+@mixin subheading() {
+	@include xlrg-text;
+	color: $ltyellow;
+	font-family: $mainFont;
+	line-height: 1;
+}
+
+@mixin headinghr() {
+	border: 4px solid $blue;
+	margin-bottom: 2rem;
+	width: 200px;
+}
+
+
+@mixin xxxlrg-text {
+	font-size: 55px;
+}
+@mixin xxlrg-text {
+	font-size: 50px;
+}
+@mixin xlrg-text {
+	font-size: 45px;
+}
+@mixin lrg-text {
+	font-size: 40px;
+}
+@mixin sml-text {
+	font-size: 30px;
+}
+@mixin xsml-text {
+	font-size: 25px;
+}
+@mixin xxsml-text {
+	font-size: 20px;
+}
+@mixin xxxsml-text {
+	font-size: 16px;
+}
+
+
+@mixin def-term {
+	@include sml-text;
+	color: $ltyellow;
+	margin-top: $blockMargin2;
+	margin-bottom: 0.5rem;
+	font-weight: 700;
+	text-align: left;
+}
+
+@mixin def-def {
+	font-size: 22px;
+	margin-top: 0.25rem;
+	text-align: left;
+}
+
+
+@mixin list {
+	list-style: none;
+	text-align: left;
+
+	li:before {
+		color: $ltyellow;
+		content: "\2022"; 
+		font-size: $lrg-text;
+		margin: -5px 10px 0 -30px;
+		position: absolute;
+	}
+
+	.dash {
+		content: "\2022"; 
+	}
+}
+
+@mixin list-bullet {
+	list-style: none;
+	text-align: left;
+
+	li:before {
+		color: $ltyellow;
+		content: "\2022"; 
+		font-size: $xlrg-text;
+		margin: -5px 10px 0 -30px;
+		position: absolute;
+	}
+}
+
+@mixin dash-list {
+	list-style: none;
+	text-align: left;
+
+	li:before {
+		color: $ltyellow;
+		content: "\2013";
+		font-size: 30px;
+		margin: 0 10px 0 -26px;
+		position: absolute;
+	}
+}
+
+@mixin list-inline {
+	display: inline-flex;
+	list-style: none;
+	text-align: center;
+
+	li {
+		color: $white;
+		line-height: 1;
+		margin-right: 0.5rem;
+
+		&:before {
+			content: none;
+		}
+	}
+
+	hr {
+		border: 3px solid $dkblue;
+		margin: 1rem auto 0.5rem;
+		width: 90%;
+	}
+
+	span {
+		color: $offwhite;
+		font-size: $sml-text;
+		line-height: 1;
+	}
+}
+
+@mixin icon-lrg {
+	margin-top: 0.5rem;
+	max-width: 80px; 
+}
+
+@mixin icon-xlrg {
+	margin-top: 0.5rem;
+	max-width: 100px; 
+}
+
+@mixin mt0 { margin-top: 0 !important; }
+@mixin mt1 { margin-top: 1rem !important; }
+@mixin mt2 { margin-top: 2rem !important; }
+@mixin mt3 { margin-top: 3rem !important; }
+@mixin mt4 { margin-top: 4rem !important; }
+
+@mixin mb0 { margin-bottom: 0 !important; }
+@mixin mb1 { margin-bottom: 1rem !important; }
+@mixin mb2 { margin-bottom: 2rem !important; }
+@mixin mb3 { margin-bottom: 3rem !important; }
+@mixin mb4 { margin-bottom: 4rem !important; }
+
+@mixin ml0 { margin-left: 0; }
+@mixin ml1 { margin-left: 1rem !important; }
+@mixin ml2 { margin-left: 2rem !important; }
+@mixin ml3 { margin-left: 3rem !important; }
+@mixin ml4 { margin-left: 4rem !important; }
+
+@mixin mr0 { margin-right: 0 !important; }
+@mixin mr1 { margin-right: 1rem !important; }
+@mixin mr2 { margin-right: 2rem !important; }
+@mixin mr3 { margin-right: 3rem !important; }
+@mixin mr4 { margin-right: 4rem !important; }
+
+@mixin m0 { margin: 0; }
+@mixin m1 { margin: 1rem !important; }
+@mixin m2 { margin: 2rem !important; }
+@mixin m3 { margin: 3rem !important; }
+
+@mixin mt-1 { margin-top: -1rem !important; }
+@mixin mt-2 { margin-top: -2rem !important; }
+@mixin mt-3 { margin-top: -3rem !important; }
+
+@mixin mb-1 { margin-bottom: -1rem !important; }
+@mixin mb-2 { margin-bottom: -2rem !important; }
+@mixin mb-3 { margin-bottom: -3rem !important; }
+
+@mixin ml-1 { margin-left: -1rem !important; }
+@mixin ml-2 { margin-left: -2rem !important; }
+@mixin ml-3 { margin-left: -3rem !important; }
+
+@mixin mr-1 { margin-right: -1rem !important; }
+@mixin mr-2 { margin-right: -2rem !important; }
+@mixin mr-3 { margin-right: -3rem !important; }
+
+
+@mixin screen-reader {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+
+	&:focus {
+		background-color: $grey;
+		clip: auto !important;
+		clip-path: none;
+		color: $black;
+		display: block;
+		font-size: 1em;
+		height: auto;
+		left: 5px;
+		line-height: normal;
+		padding: 15px 23px 14px;
+		text-decoration: none;
+		top: 5px;
+		width: auto;
+		z-index: 100000; /* Above WP toolbar. */
+	}
+}
+
+
+// Change text colors against light slide backgrounds
+@include light-bg-text-color(#222);
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal {
+
+	.sr-text {
+		@include screen-reader;
+	}
+
+    .slides {
+
+    	a {
+    		background-image: linear-gradient(to bottom, $dkblue 0%, $dkblue 100%);
+			-webkit-background-position: 0% 110%;
+			background-position: 0% 110%;
+			background-repeat: repeat-x;
+			-webkit-background-size: 0px 0px;
+			background-size: 0px 0px;
+			border-radius: 2px;
+			-webkit-transition: color 150ms,background-size 150ms;
+			transition: color 150ms,background-size 150ms;
+			padding: 0px 5px;
+    		text-decoration: underline;
+    		text-underline-offset: 5px;
+
+			&:hover {
+				-webkit-background-size: 2px 100%;
+				background-size: 2px 100%;
+				-webkit-text-decoration: none;
+				text-decoration: none;
+				z-index: 1;
+			}
+
+			&:focus {
+				outline: 2px solid $linkColor;
+				outline-offset: 2px;
+				text-decoration: none;
+			}
+		}
+
+ 		.inner-slide {
+ 			display: flex !important;
+			flex-direction: column;
+
+			&.content-left {
+				align-items: start;
+			}
+
+ 			&.content-right {
+				align-items: end;
+			}
+ 		}
+
+		.half {
+			width: 50%;
+		}
+
+		.sixty {
+			width: 60%;
+		}
+
+		.two-third {
+			width: 64%;
+		}
+
+		.three-qrt {
+			width: 70%;
+		}
+
+		.three-qrtr {
+			width: 75%;
+		}
+
+		.eighty {
+			width: 80%;
+		}
+
+		.ninety {
+			width: 90%;
+		}
+
+		.full {
+			width: 95%;
+		}
+
+		.mt0 { @include mt0; }
+ 		.mt1 { @include mt1; }
+ 		.mt2 { @include mt2; }
+ 		.mt3 { @include mt3; }
+ 		.mt4 { @include mt4; }
+
+		.mt-1 { @include mt-1; }
+		.mt-2 { @include mt-2; }
+		.mt-3 { @include mt-3; }
+
+ 		.mb0 { @include mb0; }
+ 		.mb1 { @include mb1; }
+ 		.mb2 { @include mb2; }
+ 		.mb3 { @include mb3; }
+ 		.mb4 { @include mb4; }
+
+		.mb-1 { @include mb-1; }
+		.mb-2 { @include mb-2; }
+		.mb-3 { @include mb-3; }
+
+ 		.ml0 { @include ml0; }
+ 		.ml1 { @include ml1; }
+		.ml2 { @include ml2; }
+		.ml3 { @include ml3; }
+		.ml4 { @include ml4; }
+
+		.ml-1 { @include ml-1; }
+		.ml-2 { @include ml-2; }
+		.ml-3 { @include ml-3; }
+
+		.mr0 { @include mr0; }
+ 		.mr1 { @include mr1; }
+		.mr2 { @include mr2; }
+		.mr3 { @include mr3; }
+		.mr4 { @include mr4; }
+
+		.mr-1 { @include mr-1; }
+		.mr-2 { @include mr-2; }
+		.mr-3 { @include mr-3; }
+
+		.m0 { @include m0; }
+		.m1 { @include m1; }
+		.m2 { @include m2; }
+		.m3 { @include m3; }
+
+		.xxxlrg-text { @include xxxlrg-text; }
+		.xxlrg-text { @include xxlrg-text; }
+		.xlrg-text { @include xlrg-text; }
+		.lrg-text { @include lrg-text; }
+		.sml-text { @include sml-text; }
+		.xsml-text { @include xsml-text; }
+		.xxsml-text { @include xxsml-text; }
+		.xxxsml-text { @include xxxsml-text; }
+
+		hr {
+			@include headinghr;
+		}
+
+		.center {
+			@include center;
+		}
+
+		.white-text {
+			color: $white;
+		}
+
+		.icon-lrg {
+			@include icon-lrg;
+		}
+
+		.icon-xlrg {
+			@include icon-xlrg;
+		}
+
+		.subheading {
+			@include subheading;
+		}
+
+		.definition {
+			@include def-term;
+		}
+
+		.definition2 {
+			@include def-def;
+		}
+
+		ul {
+			@include mt1;
+
+			&.col-two {
+				column-count: 2;
+				display: block;
+
+				li {
+					line-height: 1.1;
+					@include mr1;
+					@include mt1;
+
+					&:first-child {
+						@include mt0;
+					}
+				}
+			}
+		}
+
+
+// Specific slide styles.
+
+		#a11y {
+			h1 {
+				@include mb1;
+			}
+
+			.line1 {
+				p {
+					color: $blue;
+					line-height: 1;
+
+					span {
+						margin-right: 22rem;
+					}
+				}
+			}
+
+			.line2 {
+				p {
+					color: $ltyellow;
+					letter-spacing: 12px;
+					margin-left: 12px;
+					margin-top: -4.15rem;
+				}
+			}
+
+			.line3 {
+				margin-top: -2.75rem;
+
+				span {
+					margin-right: 17rem;
+					margin-top: -3.25rem;
+				}
+			}
+
+			.line4 {
+				p {
+					color: $white;
+					margin-top: -2.5rem;
+				}
+			}
+
+			.line5 {
+				color: $ltyellow;
+				font-weight: bold;
+				letter-spacing: 8px;
+				@include mt-2;
+
+				p span{
+					color: $blue;
+					@include xxlrg-text;
+				}
+			}
+		}
+
+		#types {
+			h1 {
+				font-size: 62px;
+				margin: 0 auto;
+				width: 50%;
+			}
+
+			ul.inline {
+				margin: 0 0 0 1em;
+
+				li {
+					font-size: 29px;
+					max-width: 20%;
+
+					&:first-child,
+					&:last-child {
+						margin-top: -3.5rem;
+					}
+
+					&:nth-child(2),
+					&:nth-child(4) {
+						margin-top: 3rem;
+					}
+
+					&:nth-child(3) {
+						margin-top: 7rem;
+					}
+
+					ul {
+						margin: 0 !important;
+
+						li {
+							color: $offwhite;
+							font-size: 24px;
+							margin: 12px 0 0 0 !important;
+							min-width: 100%;
+							text-align: center;
+
+							&:first-child {
+								margin-top: 15px !important;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#stats {
+
+			h1 {
+				font-size: 60px
+			}
+		}	
+
+		ul {
+			list-style: none;
+
+			&.dashlist {
+				text-align: left;
+
+				li:before {
+					content: "\2013";
+					font-size: 30px;
+					margin-top: 0;
+					margin-left: -26px;
+				}
+			}
+
+			li:before {
+				content: "\2022"; 
+				color: $ltyellow;
+				font-size: 40px;
+				margin-left: -30px;
+				margin-right: 10px;
+				margin-top: -5px;
+				position: absolute;
+			}
+
+			&.inline {
+				display: inline-flex;
+				list-style: none;
+				text-align: center;
+
+				li {
+					color: $white;
+					line-height: 1 !important;
+					margin-right: 0.5rem;
+
+					&:before {
+						content: none;
+					}
+				}
+
+				hr {
+					border: 3px solid $dkblue;
+					margin: 1rem auto 0.5rem;
+					width: 90%;
+				}
+
+				span {
+					color: $offwhite;
+					font-size: 24px;
+					line-height: 1;
+				}
+			}
+
+			&.stats-list {
+				list-style: none;
+				margin-top: -1.5rem;
+				text-align: left;
+
+				li {
+					font-size: 27px;
+					line-height: 1;
+					margin-top: 1rem;
+
+					&:before {
+						content: none;
+					}
+
+					p {
+						line-height: 1;
+						margin: 0.25rem 0;
+					}
+
+					.stat {
+						color: $blue; 
+						font-size: 44px;
+						font-weight: 700;
+						text-align: left;
+					}
+				}
+			}
+
+			&.stats-list-2 {
+				margin-top: 0rem !important;
+			}
+
+			&.footnotes {
+				list-style: none;
+				margin-top: 2rem;
+				text-align: left;
+				font-size: 18px !important;
+
+				li {
+					font-size: 18px;
+					font-style: italic;
+					line-height: 1;
+					margin-top: 0.25rem;
+				}
+			}
+		}
+
+		img {
+			&.img-top {
+				max-width: 500px;
+			}
+
+			&.img-icon {
+				display: block;
+				margin: 0 auto 10px;
+				max-width: 90px
+			}
+		}
+
+		sup {
+			color: $linkColor;
+			font-size: 12px;
+		}
+
+		.footnotes sup {
+			color: $offwhite;
+		 }
+
+		.footnote {
+		 	font-size: 18px;
+		 	font-style: italic;
+		 	font-weight: normal;
+		 	margin-right: 13rem;
+		 	margin-top: -1rem;
+		 	text-align: right;
+		}
+	}
+
+	.slide-stats-img {
+
+		.slide-stats-img-1 {
+			margin-top: -1rem;
+			max-width: 50%;
+		}
+
+		.slide-stats-img-2,
+		.slide-stats-img-3,
+		.slide-stats-img-4,
+		.slide-stats-img-5,
+		.slide-stats-img-6,
+		.slide-stats-img-7, {
+			max-height: 475px;
+			position: absolute;
+			top: -20px
+		}
+
+		.slide-stats-img-2 {
+			left: 370px
+		}
+
+		.slide-stats-img-3 {
+			left: 485px
+		}
+
+		.slide-stats-img-4 {
+			left: 600px
+		}
+
+		.slide-stats-img-5 {
+			left: 715px
+		}
+
+		.slide-stats-img-6 {
+			left: 830px
+		}
+
+		.slide-stats-img-7 {
+			left: 940px
+		}
+	}
+
+	.slide-benefits {
+		ul {
+			font-size: 30px;
+			text-align: left;
+
+			li {
+				line-height: 1.1;
+				margin-top: 1.5rem !important;
+
+				span {
+					color: $ltyellow;
+					font-weight: bold;
+					font-style: italic;
+				}
+			}
+		}
+
+		ul.col-two {
+			column-count: 2;
+			font-size: 30px;
+			display: block;
+			margin-left: 3rem;
+			margin-top: 1rem;
+
+			li {
+				font-size: 28px;
+				margin-top: 0.75rem !important;
+
+				&:before {
+					content: "\2022" !important; 
+				}
+
+				&:first-child {
+					margin-top: 0rem !important;
+				}	
+			}
+		}
+	}
+
+	.slide-benefits-company {
+
+		ul {
+			column-count: 2;
+
+			li {
+				line-height: 1.1;
+				margin-top: 1rem;
+
+				&:first-child {
+					margin-top: 0;
+				}
+
+			}
+		}
+	}
+
+	.slide-factors {
+		ul li {
+			font-size: 30px;
+			margin-top: 0.75rem;
+
+			span {
+				font-style: italic;
+				font-size: 26px;
+			}
+		}
+	}
+
+	.slide-assistive {
+		.inner-slide-right {
+			ul {
+				font-size: 28px;
+				line-height: 1.1;
+				text-align: left;
+
+				li {
+					margin-top: 1.5rem;
+
+					ul {
+						margin-top: 1.5rem;
+
+						li {
+							&:first-child {
+								margin-top: 0rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.slide-device {
+		text-align: left;
+
+		h1 {
+			font-size: 56px;
+			text-align: center;
+		}
+
+		.compare-lists {
+			margin-left: 6rem;
+		}
+
+		.compare {
+			display: inline-block;
+			margin-top: 0rem;
+			width: 45%;
+
+			ul {
+				font-size: 28px;
+				margin-top: -2rem;
+				margin-right: 1rem;
+				vertical-align: top;
+
+				li {
+					line-height: 1;
+					margin-top: 0.75rem;;
+				}
+			}
+		}
+	}
+
+	.slide-wcag {
+
+		h1 {
+			font-size: 56px;
+		}
+		ul.dashlist {
+			width: 90%;
+			li {
+				font-size: 30px;
+				margin-top: 0.75rem;
+			}
+		}
+		ul.inline {
+			justify-content: center;
+			margin-top: 0;
+			margin-bottom: 0rem;
+			width: 100%;
+
+			li {
+				font-size: 24px;
+				margin: 0.5rem 1rem;
+			}
+		}
+	}
+
+	.slide-terms {
+		ul li {
+			margin-top: 1rem;
+		}
+	}
+
+	.compare {
+		display: inline-block;
+		margin-top: 1rem;
+		margin-right: 0rem;
+		width: 23%;
+		vertical-align: top;
+
+		ul {
+			margin-top: 0rem;
+			margin-right: 1rem;
+			vertical-align: top;
+
+			li {
+				line-height: 1;
+				margin-top: 0.75rem;
+			}
+		}
+	}
+
+	.slide-content {
+		width: 100%;
+
+		h1 {
+			font-size: 56px;
+		}
+
+		h2 {
+			font-size: 22px;
+			margin-bottom: 0.5rem;
+		}
+
+		.all-lists {
+			margin: 0 auto;
+		}
+
+		.compare {
+			border: 1px solid $grey;
+			min-height: 210px;
+			padding: 15px;
+			width: 46%;
+
+			p {
+				font-size: 18px;
+				margin:0;
+			}
+
+			ul {
+				margin: 0 !important;
+				width: 85%;
+
+				li:before {
+					font-size: 32px;
+					margin-left: -22px;
+					margin-top: -7px;
+					margin-right: 0;
+				}
+			}
+		}
+
+		ul {
+			font-size: 26px;
+			margin-top: -2rem;
+
+			li {
+				font-size: 20px;
+				margin-top: 1rem;
+				margin-right: 1.5rem;
+			}
+		}
+
+		&.content {
+			ul li {
+				margin-right: 2rem;
+
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+
+	#make {
+		h1 {
+			margin: 0 auto 2rem;
+			width: 70%;
+		}
+
+		ul li {
+			margin-top: 1rem;
+		}
+	}
+
+	.slide-development {
+		.compare {
+			min-height: 400px;
+		}
+	}
+
+	.slide-testing {
+		.compare {
+			width: 48%;
+
+			h1 {
+				font-size: 50px;
+			}
+
+			p {
+				margin-bottom: 0;
+				margin-top: 0;
+			}
+
+			ul {
+				margin-top: 1rem;
+
+				li {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+
+	.credits {
+		ul li:before {
+			content: none;
+		}
+	}
+
+	#glossary {
+		ul.dashlist {
+			margin: 0;
+
+			li {
+				font-size: 18px;
+				margin-top: 0.5rem;
+			}
+		}
+	}
+
+
+	.fragment.highlight-green.visible {
+		color: $green;
+	}
+}
