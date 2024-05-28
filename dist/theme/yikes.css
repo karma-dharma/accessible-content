@@ -1452,9 +1452,6 @@ section.has-light-background, section.has-light-background h1, section.has-light
   }
 }
 #superman {
-  -webkit-animation: diagonal-move-anim 5s linear;
-  animation: diagonal-move-anim 5s infinite linear;
-  animation-delay: 0s;
   top: -410px;
   left: -400px;
   max-height: 350px;

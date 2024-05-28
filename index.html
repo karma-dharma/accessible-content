@@ -45,8 +45,8 @@
 				<section id="a11y" class="full" data-background="img/slide-blank1.png" data-transition="slide" data-background-transition="zoom">
 					<img class="icon-img maxpx-100" src="img/icon-a11y.png" alt="accessibility icon">
 					<h1 class="fragment fade-right mb1">"A11Y"</h1>
-					<img id="superman" class="fragment on-top" src="img/superman2.png">
 					<p><span class="fragment fade-in-then-semi-out">It's a Number!</span><span class="fragment fade-in-then-semi-out"> It's a Word!</span>
+						<img id="superman" class="fragment on-top" src="img/superman2.png">
 						<br/><span class="fragment fade-in-then-semi-out">...It's a Numeronym!</span></p>
 					<p class="fragment fade-left">( a number-based word ) 
 						<br><span class="fragment zoom-in white">-An abbreviation for "accessibility"</span></p>
@@ -75,19 +75,20 @@
 <!-- New Section -->
 				<section id="topics" class="inner-slide content-left" data-background="img/slide2.png" data-transition="slide" data-background-transition="zoom">
 					<div class="max-60">
-						<h1 class="mt-2 mb1">Today's Topics</h1>
-						<hr class="mb3">
-						<ul class="fragment fade-left list list-circle list-col-two ml4">
-							<li>Understanding A11Y</li>
-							<li>Types of Disabilities</li>
-							<li>A11Y Benefits & the Curb Effect</li>
-							<li>Assistive Technology</li>
-							<li>The Screen Reader and the Experience</li>
-							<li>Guidelines & WCAG Standards</li>
-							<li>Know Your Audience</li>
-							<li>Visual Storytelling</li>
-							<li>Rules & Tips for Accessible Content</li>
-							<li>How to Test Accessibility</li>
+						<h1 class="mt-6 mb1">Today's Topics</h1>
+						<hr class="mt1 mb3">
+						<ul class="fragment fade-left list list-circle list-col-two ml2">
+							<li>A11Y Overview</li>
+							<li>Disabilities & Conditions</li>
+							<li>Benefits of A11Y</li>
+							<li>Statistics & Impact</li>
+							<li>Assistive Technologies</li>
+							<li>The Screen-Reader</li>
+							<li>Guidelines for Writing
+							<li>Best Practices for Content</li>
+							<li>Testing for A11Y</li>
+							<li>Conclusion</li>
+							<li>Questions & Answers</li>
 						</ul>
 					</div>
 				</section>
@@ -96,17 +97,46 @@
 <!-- New Section -->
 				<section data-transition="slide" data-background-transition="slide">
 
-					<section id="whatis" class="inner-slide content-right" data-background="img/slide3.png" data-transition="slide" data-background-transition="zoom">
+					<section id="whatis" class="inner-slide content-right" data-background="img/slide-understanding.png" data-transition="slide" data-background-transition="zoom">
 						<div class="max-64 alignleft">
-							<h1 class="mt-3">Understanding A11y</h1>
-							<hr>
-							<ul class="list list-circle mt-2">
-								<li class="mt2"><p><span class="bold">Accessibility</span> - Refers to the design of products, devices, services, or environments for people who experience disabilities.</p></li>
-								<li class="mt2"><p><span class="bold">Inclusive Content</span> - Making sure everyone can access and understand your content.</p></li>
-								<li class="mt2"><p><span class="bold">Inclusive Practices</span> - considers the needs of individuals with diverse abilities and provides equitable access to information and resources.</p> </li>
+							<h1 class="mt-4">Accessibility Overview</h1>
+							<hr class="mt0">
+							<ul class="list list-circle mt-2 size30">
+								<li class="fragment fade-down mt2"><p><span class="bold white">Accessibility</span> - Refers to the design of products, devices, services, or environments for people who experience disabilities.</p></li>
+								<li class="fragment fade-up mt2"></p><span class="bold white">Web Accessibility</span> - The practice of making sure that websites and related tools can be used by everyone, regardless of their ability.</li>
+								<hr class=" fragment fade-up mt2 mb1">
+								<li class="fragment fade-up mt2"><p><span class="bold white">Inclusive Practices</span> - considers the needs of individuals with diverse abilities and provides equitable access to information and resources.</p> </li>
+								<li class="fragment fade-down mt2"><p><span class="bold white">Inclusive Content</span> - Making sure everyone can access and understand your content.</p></li>
+								
 							</ul>
 						</div>
 					</section>
+
+					<section id="wcag" class="inner-slide content-right" data-background="img/slides-justice.png" data-transition="slide" data-background-transition="slide">
+						<div class="max-80">
+							<h1 class="mt-3 size55">Accessibility Overview</h1>
+							<hr class="mt-1 mb1">
+							<ul class="list list-circle mt0 size28 max-70">
+								<li class="fragment fade-left"><span class="white bold">WCAG 2.0</span> <span class="white">- Web Content Accessibility Guidelines</span><br class=" mb1">
+								<span class="fragment fade-up">-Guidelines established to help content authors and developers create web content that is accessible for people of all abilities / disabilities.</span><br class="mb1">
+								<span class="fragment fade-up">-Four<span class="white bold">(4)</span> main principles: <span class="white bold">P</span>erceivable; <span class="white bold">O</span>perable; <span class="white bold">U</span>nderstandable; <span class="white bold">R</span>obust - ("P-O-U-R")</span><br class="mb1">
+								<span class="fragment fade-up">-Three<span class="white bold"> (3)</span> levels of compliance: <span class="white bold">AAA</span> | <span class="white bold">AA</span> | <span class="white bold">A</span></span></li>
+
+								<li class="fragment fade-right mt3"><span class="white bold">ADA</span> <span class="white">- Americans with Disabilities Act</span><br class="mb1">
+								<span class="fragment fade-up">-U.S. federal law that prohibits discrimination against people with disabilities.</span><br class="mb1">
+								<span class="fragment fade-up">-Applies to employment, transportation, public accommodations, communications and access to state and local government programs and services.</span></li>
+							</ul>
+
+						</div>
+
+						<aside class="notes">
+							<p> WCAG is The most-referenced set of standards in lawsuits</p>
+							<p> The WCAG documents explain how to make web content more accessible to people with disabilities.</p>
+							<p>Web "content" generally refers to the information in a web page or web application, including:</p>
+						</aside>
+
+					</section>
+
 
 					<section id="types" class="inner-slide content-right" data-background="img/slide-types.png" data-transition="slide" data-background-transition="zoom">
 						<div class="max-80">
@@ -198,6 +228,51 @@
 						</div>
 					</section>
 
+					<section id="stats" class="inner-slide content-left" data-background="img/slide-stats.png">
+						<div class="max-64">
+							<h1 class="mt-3 size60">Statistics & Impact</h1>
+							<hr class="mb1">
+							<p class="fragment fade-left toptext size30">Let's look at some of the statistics...</p>
+							<ul class="list list-none mt-1 ml2">
+								<li>
+									<p>
+										<span class="fragment fade-up blue size45 bold">10%</span>
+										<span class="fragment fade-left"> - Americans over aged 25 do not have a high school diploma.</span>
+									</p>
+								</li>
+
+								<li>
+									<p>
+										<span class="fragment fade-down blue size45 bold">19%</span>
+										<span class="fragment fade-right"> - of adults cannot read a newspaper, much less complete a job application, (according to the National Center for Education Statistics).</span>
+									</p> 
+								</li>
+
+								<li>
+									<p>
+										<span class="fragment fade-up blue size45 bold">32 million</span>
+										<span class="fragment fade-left"> - American adults are unable to read at all (estimated by The National Institute for Literacy and the U.S. Department of Education).</span>
+									</p>
+								</li>
+
+								<li>
+									<p>
+										<span class="fragment fade-down blue size45 bold">45 million</span>
+										<span class="fragment fade-right"> - Americans are functionally illiterate and cannot read above a fifth-grade level or above.</span>
+									</p>
+								</li>
+
+								<li>
+									<p>
+										<span class="fragment fade-up blue size45 bold">50%</span>
+										<span class="fragment fade-left"> - American adults can’t read a book written at an eighth-grade level.</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+
+					</section>
+
 				</section>
 
 
@@ -222,7 +297,7 @@
 									</ul>
 								</li>
 							</ul>
-							<img class="bottom-img fragment fade-in ml-5" src="img/assistive-tech.png" alt="clipart of various assistive technologies">
+							<img class="bottom-img ml-5" src="img/assistive-tech.png" alt="clipart of various assistive technologies">
 						</div>
 	<aside class="notes">
 		<p>Screen Reader acronym meanings:</p>
@@ -268,43 +343,7 @@
 
 				</section>
 
-
-<!-- New Section -->
-				<section data-transition="slide" data-background-transition="slide">
-
-					<section id="wcag" class="inner-slide content-right slide-wcag" data-background="img/slides-justice.png" data-transition="slide" data-background-transition="slide">
-						<div class="max-75">
-							<h1 class="mt0 mb0 size55">A11Y Guidelines & Standards</h1>
-							<hr>
-							<h2 class="fragment fade-up mb1 mt-1">WCAG 2.0</h2>
-							<p class="fragment fade-down mt0 bold size32">Web Content Accessibility Guidelines</p>
-							<ul class="list list-circle mt-1 size28 max-80">
-								<li class="fragment fade-left">The set of web accessibility guidelines which are the main internationally agreed upon standards for the World Wide Web</li>
-								<li class="fragment fade-left">Established to help content authors and developers create web content that is accessible for people of all abilities and disabilities</li>
-								<li class="fragment fade-left mb-2">Organized by four <span class="ltyellow">(4)</span> main principles, with three<span class="ltyellow"> (3)</span> levels of compliance:</li>
-							</ul>
-
-							<ul class="ml-4 mt-4 mb-3 list list-inline">
-								<li class="fragment zoom-in ml4 mr1 mt-2 max-26 size24"><span class="ltyellow size30 bold">P</span><br/>
-									Perceivable</li>
-								<li class="fragment zoom-in mt-2 mr1 max-26 size24"><span class="ltyellow size30 bold">O</span><br/>
-									Operable</li>
-								<li class="fragment zoom-in mr2 mt-2 max-26 size24"><span class="ltyellow size30 bold">U</span><br/>
-									Understandable</li>
-								<li class="fragment zoom-in max-26 mt-2 size24 ml0"><span class="ltyellow size30 bold">R</span><br/>
-									Robust</li>
-							</ul>
-							<hr class="fragment fade-left border-w max-55 mb0 mt2">
-							<p class="fragment fade-left aligncenter ltyellow size26 bold">Level 1&nbsp;&nbsp;&nbsp;Level 2&nbsp;&nbsp;&nbsp; Level 3</p>
-							<p class="fragment fade-left aligncenter white size26 bold">AAA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A</p>
-						</div>
-	<aside class="notes">
-		<p> WCAG is The most-referenced set of standards in lawsuits</p>
-		<p> WCAG 2.2 was finally released in 2023</p>
-	</aside>
-					</section>
-
-				</section>
+			</section>
 
 
 <!-- New Section -->
@@ -312,7 +351,7 @@
 
 					<section class="inner-slide content-right" data-background="img/slide8.png" data-transition="slide" data-background-transition="slide">
 						<div class="max-60">
-							<h1 class="mt-3 mb0 size50">Accessible Content</h1>
+							<h1 class="mt-3 mb0 size50">Guidelines for Writing</h1>
 							<hr>
 							<h2 class="fragment fade-up mb1 mt-1">Know Your Audience</h2>
 							<p class="fragment fade-up size30 alignleft">-Put yourself in the shoes of your audience to understand their perspectives, challenges and needs.</p>
@@ -328,7 +367,7 @@
 
 					<section class="inner-slide content-right" data-background="img/slide7.png" data-transition="slide" data-background-transition="slide">
 						<div class="max-50">
-							<h1 class="mt-2 mb0 size50">Accessible Content</h1>
+							<h1 class="mt-2 mb0 size50">Guidelines for Writing</h1>
 							<hr>
 							<h2 class="fragment fade-up mb1 mt-1">Visual Storytelling</h2>
 							<p class="fragment fade-up size30 alignleft">-Visuals help to convey messages that leave a lasting impression and transcend language barriers.</p>
@@ -382,7 +421,7 @@
 						</div>
 					</section>
 
-					<section id="audio" class="inner-slide content-right" data-background="img/slide10.png" data-transition="slide" data-background-transition="slide">
+<!-- 					<section id="audio" class="inner-slide content-right" data-background="img/slide10.png" data-transition="slide" data-background-transition="slide">
 						<div class="max-60">
 							<h1 class="mt-1 size55">Accessible Audio & Video</h1>
 							<hr/>
@@ -398,9 +437,9 @@
 						</div>
 						
 					</section>
-
+ -->
 					<section id="content" class="inner-slide full" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
-						<h1 class="size50 mt-3">Accessible Content</h1>
+						<h1 class="size50 mt-3">Best Practices for Content</h1>
 						<hr class="mt-1 mb1">
 						<ul class="list list-dash list-col-two size24 mt1 ml2">
 							<li class="fragment fade-left mr2">Ensure all page sections have a descriptive heading, even if it's not visible.
@@ -452,8 +491,8 @@
 							<h1>How to Test A11Y</h1>
 							<hr/>
 							<div class="compare">
-								<h2 class="alignleft ltyellow mb0 ml3 size30">Automated:</h2>
-								<ul class="list list-dash size26 ml-4">
+								<h2 class="fragment fade-left alignleft ltyellow mb0 ml3 size30">Automated:</h2>
+								<ul class="fragment fade-left list list-dash size26 ml-4">
 									<li><a target="_blank" href="https://accessibilityinsights.io/docs/web/overview/">Accessibility Insights for Web</a> - (Chrome) - The best, most thorough test</li> 
 									<li><a target="_blank" href="https://wave.webaim.org/">WAVE Testing Tool</a> - (Add-on or extension)</li>
 									<li><a target="_blank" href="https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US&branded&utm_term=axe%20download&utm_campaign=Search%20-%20axe%20DevTools%20-%20Checker&utm_source=adwords&utm_medium=ppc&hsa_src=g&hsa_ad=626089536234&hsa_tgt=kwd-738367405671&hsa_mt=p&hsa_ver=3&hsa_acc=7854167720&hsa_kw=axe%20download&hsa_grp=142979637091&hsa_cam=17378411167&hsa_net=adwords&gclid=CjwKCAjwyNSoBhA9EiwA5aYlb-jPNQUJGfiqX_SoQGDRrJqUwh2RDbEBHYCvEPU7VPvKB01Yh8DlzhoClQ4QAvD_BwE">AXE></a> - Firefox extension</li>
@@ -463,8 +502,8 @@
 							</div>
 
 							<div class="compare">
-								<h2 class="alignleft ltyellow mb0 ml3 size30">Manually:</h2>
-								<ul class="list list-dash size26 mt2 ml4">
+								<h2 class="fragment fade-left alignleft ltyellow mb0 ml3 size30">Manually:</h2>
+								<ul class="fragment fade-left list list-dash size26 mt1 ml4">
 									<li>Listen for yourself - Turn on screen-reader, use keyboard commands (Tab/Enter/Spacebar)</li>
 									<li>Text-only Zoom in - (browser setting) - (Ctrl + UpArrow) to zoom-in at 200% - ensure nothing is cut off or falls off</li>
 									<li>Spectrum - (Chrome extension) - test various types of color-blindness</li>
@@ -480,7 +519,7 @@
 <!-- New Section -->
 				<section data-transition="slide" data-background-transition="slide">
 
-					<section id="resources" class="slide-resources" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
+					<section id="resources1" class="slide-resources" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
 						<h1>Resources</h1>
 						<hr class="mt0 mb0">
 						
@@ -497,11 +536,11 @@
 						</ul>
 					</section>
 
-					<section id="resources" class="slide-resources" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
+					<section id="resources2" class="slide-resources" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
 						<h1>Resources</h1>
 						<hr class="mt0 mb0">
-						<p>Design:</p>
-						<ul class="list list-dash size26">
+						<p class="alignleft size30 bold mb1">Design:</p>
+						<ul class="list list-dash size26 mt0">
 							<li><a target="_blank" href="https://webaim.org/resources/contrastchecker/?fcolor=0000FF&bcolor=FFFFFF">Color Contrast Checker</a> - enter foreground and/or background color to find out the contrast ratio</li>
 							<li><a target="_blank" href="https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF">Link Color Contrast Checker</a> - color contrast checker specifically for link text color, relative to normal text color</li>
 							<li><a target="_blank" href="https://webaim.org/resources/contrastchecker/bookmarklet">Contrast Checker Bookmarklet</a> - install to display a miniature version of the Contrast Checker in any web page</li>
@@ -512,12 +551,11 @@
 						</ul>
 					</section>
 
-					<section id="resources" class="slide-resources" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
+					<section id="resources3" class="slide-resources" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
 						<h1>Resources</h1>
 						<hr class="mt0 mb0">
-
-						<p>Checklists & Cheat-sheets:</p>						
-						<ul class="list list-dash size26">
+						<p class="alignleft size30 bold mb1">Checklists & Cheat-sheets:</p>					
+						<ul class="list list-dash size26 mt0">
 							<li><a target="_blank" href="https://learntheweb.courses/topics/accessibility-cheat-sheet/"> LTW (Learn The Web) - Accessibility cheat sheet</a></li>
 							<li><a target="_blank" href="https://learntheweb.courses/topics/accessibility-checklist/"> LTW (Learn The Web) - Accessibility checklist</a></li>
 							<li><a target="_blank" href="https://www.a11yproject.com/checklist/">The A11Y Project - Check Your WCAG Compliance</a></li>
@@ -525,12 +563,12 @@
 						</ul>
 					</section>
 
-					<section id="resources" class="slide-resources" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
-						<h1>Resources</h1>
-						<hr class="mt0 mb0">
+					<section id="resources4" class="slide-resources" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
+						<h1 class="mt-2 size56 mb0">Resources</h1>
+						<hr class="mb0">
 
-						<p>Learning Resources:</p>
-						<ul class="list list-dash">
+						<p class="alignleft size30 bold mb1">Learning Resources:</p>
+						<ul class="list list-dash mt-2 size28">
 							<li><a target="_blank" href="https://a11y-101.com/">A11Y-101</a></li>
 							<li><a target="_blank" href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Introduction to Web Accessibility (W3C/WAI)</a></li>
 							<li><a target="_blank" href="https://a11y-style-guide.com/style-guide/">A11Y Style Guide</a></li>
@@ -539,8 +577,8 @@
 							<li><a target="_blank" href="https://help.siteimprove.com/support/solutions/articles/80000863904-accessibility-image-alt-text-best-practices">Accessibility: Image Alt text best practices</a></li>
 							</ul>
 
-							<p>Other Articles/Videos:</p>
-							<ul>
+							<p class="alignleft size30 bold mb1">Other Articles/Videos:</p>
+							<ul class="list list-dash mt-2 size28">
 							<li><a target="_blank" href="https://www.smashingmagazine.com/category/accessibility/">List of articles on Accessibilty, Smashing Magazine</a></li>
 							<li><a target="_blank" href="https://www.youtube.com/watch?v=uJpIH5YAhxo&t=24s">Video (48 minutes) - "Focus Fist: a new design/front end approach"</a></li>
 							<li><a target="_blank" href="https://www.youtube.com/watch?v=OUDV1gqs9GA">Video (1 hour, 12 minutes) - "How a Screen Reader User Surfs the Web"</a></li>
@@ -555,35 +593,11 @@
 
 				<section data-transition="slide" data-background-transition="slide">
 
-					<section class="credits" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
-						<h1 class="mt1">Footnotes</h1>
-						<hr class="mt1 mb4">
-						<ul class="footnotes list-none list max-75 center mt1">
-							<li><sup>1</sup> <a target="_blank" href="https://www.audioeye.com/post/understanding-the-web-content-accessibility-guidelines/">AudioEye, Article, April 18, 2023, "Understanding the Web Content Accessibility Guidelines"</a></li>
+					<section id="conclusion" class="the-end" data-background="img/slide-blank12.png" data-transition="slide" data-background-transition="slide">
+						<h1>Questions & Answers</h1>
+					</section>					
 
-							<li><sup>2</sup> <a id="stat1"  target="_blank" href="https://www.who.int/en/news-room/fact-sheets/detail/disability-and-health">The World Health Organization (WHO)</a></li>
-
-							<li><sup>3</sup> <a id="stat2"  target="_blank" href="https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html"> Centers for Disease Control and Prevention (CDC)</a></li>
-
-							<li><sup>4</sup> <a id="stat3" target="_blank" href="https://www.accessibility.works/blog/benefits-ada-compliance-to-management/?utm_campaign=&utm_content=Budget%20Season%3A%20Why%20web%20accessibility%20%26%20ADA%20compliance%20is%20a%20good%20investment.&utm_medium=email&utm_source=getresponse">Accessibility Works, article, "Benefits of Web Accessibility & ADA Compliance"</a></li>
-
-							<li><sup>5</sup> <a id="stat3" target="_blank" href="https://www.rod-group.com/sites/default/files/Summary%20Report%20-%20The%20Global%20Economics%20of%20Disability%202020.pdf">Global Economics of Disability 2020 report</a></li>
-
-							<li><sup>6</sup> <a id="stat4" target="_blank" href="https://webaim.org/projects/million/">WebAim’s 2022 Report</a></li>
-
-							<li><sup>7</sup> <a id="stat5" target="_blank" href="https://blog.usablenet.com/2021-lawsuit-report-trends-and-findings">UsableNet’s 2021 ADA Digital Accessibility Lawsuits report</a></li>
-
-							<li><sup>8</sup> <a id="stat6" target="_blank" href="https://webaim.org/projects/million/2021">Webaim's, 2021 Report</a></li>
-							<li><sup>9</sup> <a target="_blank" href="https://canasstech.com/blogs/news/everything-you-need-to-know-about-screen-readers">Canadian Assistive Technology, Article, Nov 27, 2018, "Everything You Need To Know About Screen Readers", by Rob Mineault</a></li>
-						</ul>
-					</section>
-				</section>
-
-<!-- New Section -->
-
-				<section data-transition="slide" data-background-transition="slide">
-
-					<section id="conclusion" class="the-end" data-background="img/slide-blank2.png" data-transition="slide" data-background-transition="slide">
+					<section id="conclusion" class="the-end" data-background="img/slide-blank12.png" data-transition="slide" data-background-transition="slide">
 						<h1>Thank You!</h1>
 					</section>
 
@@ -728,5 +742,16 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
+
+		<script>
+		Reveal.addEventListener('fragmentshown', function(event) {
+			var superman = document.getElementById('superman');
+			if (event.fragment === superman) {
+				superman.style.animation = 'diagonal-move-anim 5s linear 2';
+				superman.style.webkitAnimation = 'diagonal-move-anim 5s linear 2'; // For older browsers
+			}
+		});
+		</script>
+
 	</body>
 </html>
