@@ -1124,9 +1124,9 @@ $headingMargin: 0 0 $blockMargin2 0;
 }
 
 #superman {
-	-webkit-animation: diagonal-move-anim 5s linear;
-	animation: diagonal-move-anim 5s infinite linear;
-	animation-delay: 0s;
+	// -webkit-animation: diagonal-move-anim 5s linear 3;
+	// animation: diagonal-move-anim 5s infinite linear 3;
+	// animation-delay: 0s;
 	top: -410px;
 	left: -400px;
 	max-height: 350px;
