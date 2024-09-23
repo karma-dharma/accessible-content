@@ -821,13 +821,17 @@ $headingMargin: 0 0 $blockMargin2 0;
 		}
 
 		.tip {
-			// color: $white;
 			font-size: 22px;
 
 			span {
 				color: $ltyellow !important;
 				font-weight: bold;
 			}
+		}
+
+		.video-embed {
+			float: right; 
+			padding-left: 1rem;
 		}
 
 		sup {
@@ -960,110 +964,6 @@ $headingMargin: 0 0 $blockMargin2 0;
 			color: $white;
 			padding: 0 5px;
 		}
-
-		// .slide-content,
-		// .slide-design {
-		// 	width: 100%;
-
-		// 	h1 {
-		// 		font-size: 56px;
-		// 	}
-
-		// 	h2 {
-		// 		font-size: 22px;
-		// 		margin-bottom: 0.5rem;
-		// 	}
-
-		// 	.all-lists {
-		// 		margin: 0 auto;
-		// 	}
-
-		// 	.compare {
-		// 		border: 1px solid $grey;
-		// 		margin-top: 1rem;
-		// 		min-height: 210px;
-		// 		padding: 15px;
-		// 		width: 46%;
-
-		// 		p {
-		// 			font-size: 18px;
-		// 			margin:0;
-		// 		}
-
-		// 		ul {
-		// 			margin: 0 !important;
-		// 			width: 85%;
-
-		// 			li:before {
-		// 				font-size: 32px;
-		// 				margin-left: -22px;
-		// 				margin-top: -7px;
-		// 				margin-right: 0;
-		// 			}
-		// 		}
-		// 	}
-
-		// 	ul {
-		// 		font-size: 26px;
-		// 		margin-top: -2rem;
-
-		// 		li {
-		// 			font-size: 20px;
-		// 			margin-top: 1rem;
-		// 			margin-right: 1.5rem;
-		// 		}
-		// 	}
-
-		// 	&.content {
-		// 		ul li {
-		// 			margin-right: 2rem;
-
-		// 			&:first-child {
-		// 				margin-top: 0;
-		// 			}
-		// 		}
-		// 	}
-		// }
-
-		// #make {
-		// 	h1 {
-		// 		margin: 0 auto 2rem;
-		// 		width: 70%;
-		// 	}
-
-		// 	ul li {
-		// 		margin-top: 1rem;
-		// 	}
-		// }
-
-		// .slide-development {
-		// 	.compare {
-		// 		min-height: 400px;
-		// 	}
-		// }
-
-		// .slide-testing {
-		// 	.compare {
-		// 		width: 48%;
-
-		// 		h1 {
-		// 			font-size: 50px;
-		// 		}
-
-		// 		p {
-		// 			margin-bottom: 0;
-		// 			margin-top: 0;
-		// 		}
-
-		// 		ul {
-		// 			margin-top: 1rem;
-
-		// 			li {
-		// 				font-size: 24px;
-		// 			}
-		// 		}
-		// 	}
-		// }
 
 		.credits {
 			ul li:before {
