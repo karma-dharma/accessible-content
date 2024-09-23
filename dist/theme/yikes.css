@@ -1050,6 +1050,9 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal .slides .size24 {
   font-size: 24px !important;
 }
+.reveal .slides .size23 {
+  font-size: 23px !important;
+}
 .reveal .slides .size22 {
   font-size: 22px !important;
 }
@@ -1394,6 +1397,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal .slides .tip span {
   color: #faf8bf !important;
   font-weight: bold;
+}
+.reveal .slides .video-embed {
+  float: right;
+  padding-left: 1rem;
 }
 .reveal .slides sup {
   color: #88CDFC;
